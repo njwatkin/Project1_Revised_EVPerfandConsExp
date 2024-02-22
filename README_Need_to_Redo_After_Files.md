@@ -140,17 +140,23 @@ The data was constrained for the 2023 model year due to the number of available 
 
 ### 4.) Barriers: Consumer barriers to EV adoption
 ####Exploration(s):
+ - The reasons consumers are hesitant to adopt EVs
+ - Demographics of EV buyers
+ - Concerns of consumers
+ - Exposure of consumers to EVs
 
 ####Possible variables:
-*Independent variables/Features*:   
+*Independent variables/Features*:   Types/models available, price, 
 
-*Dependent variables/Labels*:  
+*Dependent variables/Labels*:  Charging - locations, rates, speed, number of units available
 
-####Data Source:
+####Data Source: 2022 BEV and LCF Survey Report_FINAL_2 (consumerreports.org) and More Americans Would Buy an EV | Interest in Low-Carbon Fuels - Consumer Reports
 
-#####*Licensure and Credits*:  
+#####*Licensure and Credits*:  This data set is open access.
 
-#####*Limitations*: 
+
+#####*Limitations*: A large amount of the data regarding consumers was in reports, rather than data sets giving opinions and reasons to adopt and/or not adopt.
+
 
 
 ## Preprocessing and Analytics
@@ -498,13 +504,14 @@ Average overall charge is 2.82 hours, using 5.81kW. Charge times are greatest on
 
 ### 4.) Barriers:  Consumer barriers to EV adoption:  
 #### Exploration:  Who is most likely to purchase an EV?
-#####Code:
-#####Graph:
-#####Takeaway:
+#####Graph:  ![FCast](<Presentation/Images/EVAttributes/FCast.png>)
+#####Takeaway: The demographics of a typical EV buyer are male, young adult, with a higher education, a higher income level and live in an urban area. 
+
 #### Exploration:  Why do people not purchase an EV?
 #####Code:
-#####Graph:
-#####Takeaway:
+#####Graph:  ![FCast](<Presentation/Images/EVAttributes/FCast.png>)
+#####Takeaway: The majority of consumers are not knowledgeable on the subject of Electric Vehicles.  Without this knowledge, they are hesitant to make a purchase.
+
 
 ## Directory Structure
 ---
