@@ -114,7 +114,6 @@ The EPA's *Automotive Trends Data* did not start tracking EVs car models till 20
       - Cost is based the manufactures recommended fuel type and is estimated based on an average person driving 15,000 miles/year, with an admixture of 45% highway driving and 55% city.
    
    
-
 *Dependent variables/Labels*:
 - year/age
 
@@ -122,7 +121,9 @@ The EPA's *Automotive Trends Data* did not start tracking EVs car models till 20
 The data was extracted from the Edmund's true cost of to own https://www.edmunds.com/tco.html for the vehicles.
 
 #####*Limitations*:\
-The data was constrained for the 2023 model year due to the number of available EV on the market information from the website. The data is constrained to models costing $26k - $113k to purchase to make a fairer comparison with the different type of engines. The api is no longer open to the public, so the data was extracted into cvs for analysis.
+-The data was constrained for the 2023 model year due to the number of available EV on the market information from the website. The data is constrained to models costing $26k - $113k to purchase to make a fairer comparison with the different type of engines. The api is no longer open to the public, so the data was extracted into cvs for analysis.
+
+The data was scaped using the python script in Code/EVPerformance/reading_tables.py. The purpose of this script was to find and extract values in tables from the http file and concat them into their respective csv files found in Code/EVPerformance/Resources.
 
 ### 3.) Charging:  Charging times and trends
 ####Exploration(s):
@@ -416,15 +417,14 @@ EVs are trending toward zero CO2 emissions by 2027.  However, the small sample s
 ### 2.) Costs: The financial costs of buying and owning an EV:
 
 #### Exploration:  How do costs change over time?
-#####Code:\
-see analysis_5year_ownership_all.ipynb
-![cost_per_mile_code](figures/cost_per_mile_code.png)
+#####Code:
 
+see source code in Code/EVPerformance/
+EVPerformance/analysis_5year_ownership_all.ipynb
 
 #####Takeaway:
-
 <figure>
-<img src = "figures/cost.png", alt = "cost">
+<img src = "Presentation/Images/EVPerformance/cost.png", alt = "cost">
 <figcaption> Fig cost: The yearly cost to own for a internal combustion (left panel), hybrid (center panel) and electric type(right panel) vehicles.
 </figcaption>
 </figure>
@@ -432,7 +432,7 @@ see analysis_5year_ownership_all.ipynb
 The absolute total yearly cost to own for all internal combustion, hybrid and electric vehicle models being considered is plotted in Fig cost. Each line color represents a different model car. In each case, the first year of ownership appears to be the most expensive. There are large variations in the cost for the first year due to the large range of car prices being considered. After the first year, the fluctuations in the cost of ownership between each model vehicles decreases. 
 
 <figure>
-<img src = "figures/cost_per_mile.png", alt = "cost_per_mile">
+<img src = "Presentation/Images/EVPerformance/cost_per_mile.png", alt = "cost_per_mile">
 <figcaption> Fig cost/year: The average yearly cost/millage to own for a internal combustion (left panel), hybrid (center panel) and electric (right panel) vehicles.
 </figcaption>
 </figure>
@@ -446,7 +446,7 @@ In each case, the first year has the largest expense. It is obvious that the ele
 
 
 <figure>
-<img src = "figures/depreciation.png", alt = "depreciation"> 
+<img src = "Presentation/Images/EVPerformance/depreciation.png", alt = "depreciation"> 
 <figcaption> Fig depreciation: The average yearly depreciation for a internal combustion (top panels), hybrid (middle panels) and electric (bottom panels) vehicles.
 </figcaption>
 </figure>
@@ -454,7 +454,7 @@ In each case, the first year has the largest expense. It is obvious that the ele
 Fig depreciation is the breakdown of the yearly cost of the largest expense, the depreciation verses the initial cost of the vehicle. There is a clear linear correlation between most of the models vs cost. This indicates that one can decrease the cost of ownership by buying a cheaper vehicle. The gradients of the ev and internal combustion engines are similar for the first two years, but the offsets for the ev is larger indicating that regardless of which price point one choices, the depreciation for the ev will be larger during these two years. There appears to be a few higher priced evs that seems to retain their value, i.e. smaller depreciation. These few models represent the exception to the linear trend observed. 
 
 <figure>
-<img src = "figures/YearlyPercentageOfCost.png", alt = "Yearly%ofCost"> <figcaption> Fig Yearly Percentage of Cost: The average yearly depreciation for a internal combustion (left panel), hybrid (center panel) and electric (right panel) vehicles.
+<img src = "Presentation/Images/EVPerformance/YearlyPercentageOfCost.png", alt = "Yearly%ofCost"> <figcaption> Fig Yearly Percentage of Cost: The average yearly depreciation for a internal combustion (left panel), hybrid (center panel) and electric (right panel) vehicles.
 </figcaption>
 </figure>
 
