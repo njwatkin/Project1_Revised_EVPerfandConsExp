@@ -504,12 +504,12 @@ Average overall charge is 2.82 hours, using 5.81kW. Charge times are greatest on
 
 ### 4.) Barriers:  Consumer barriers to EV adoption:  
 #### Exploration:  Who is most likely to purchase an EV?
-#####Graph:  ![FCast](<Presentation/Images/EVAttributes/FCast.png>)
+#####Graph:  ![FCast](<Presentation/Images/ConsumerExperience/BarriersToEVAdoption.png>)
 #####Takeaway: The demographics of a typical EV buyer are male, young adult, with a higher education, a higher income level and live in an urban area. 
 
 #### Exploration:  Why do people not purchase an EV?
 #####Code:
-#####Graph:  ![FCast](<Presentation/Images/EVAttributes/FCast.png>)
+#####Graph:  ![FCast](<Presentation/Images/ConsumerExperience/ConsumerConcerns.png>)
 #####Takeaway: The majority of consumers are not knowledgeable on the subject of Electric Vehicles.  Without this knowledge, they are hesitant to make a purchase.
 
 
