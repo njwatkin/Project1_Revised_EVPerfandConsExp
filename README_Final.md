@@ -9,10 +9,10 @@
 ---
 
 We explored data on electric vehicle (EV) attributes, performance, charging, and consumer experiences with a focus on how these are related to:
-- Attributes: Real-world fuel economy and carbon dioxide emissions
-- Costs:  The financial costs of buying and owning an EV
-- Charging:  Charging times and trends
-- Barriers:  Consumer barriers to EV adoption
+- *Attributes*: EV real-world fuel economy and carbon dioxide emissions
+- *Costs*:  The financial costs of buying and owning an EV
+- *Charging*:  EV charging times and trends
+- *Barriers*:  Consumer barriers to EV adoption
 
 ##Project Questions
 ---
@@ -23,7 +23,7 @@ The questions for the projects were those we anticipated from an audience of veh
    - When can we predict EVs will emit zero carbon dioxide and possibly contribute to carbon negativity?
 - *Costs: The financial costs of buying and owning an EV*:
    - What is the greatest cost from owning an EV?
-   - How do costs change over time?
+   - How do costs of owning an EV change over time?
 - *Charging: Charging time and needs*:
    - What day of the week do most people charge EVs?
    - What is the average charge time and at what kilowatt-hours?
@@ -35,10 +35,10 @@ The questions for the projects were those we anticipated from an audience of veh
 ##Secondary Research
 ---
 Our first step was to conduct secondary research on EVs.   The secondary research helped in the following ways:
-- Broaden our understanding of the existing research on EVs
-- Identify our stakeholders
-- Narrow areas for exploration
-- Identify data sources
+- Broadened our understanding of the existing research on EVs
+- Identified our stakeholders
+- Narrowed our areas for exploration
+- Identified data sources
 
 The secondary research exposed us to the variety of EV types on the market.  
 
@@ -117,10 +117,10 @@ The EPA's *Automotive Trends Data* did not start tracking EVs car models till 20
 *Dependent variables/Labels*:
 - year/age
 
-####Data Source:\
+####Data Source:"
 The data was extracted from the Edmund's true cost of to own https://www.edmunds.com/tco.html for the vehicles.
 
-#####*Limitations*:\
+#####*Limitations*:
 -The data was constrained for the 2023 model year due to the number of available EV on the market information from the website. The data is constrained to models costing $26k - $113k to purchase to make a fairer comparison with the different type of engines. The api is no longer open to the public, so the data was extracted into cvs for analysis.
 
 The data was scaped using the python script in Code/EVPerformance/reading_tables.py. The purpose of this script was to find and extract values in tables from the http file and concat them into their respective csv files found in Code/EVPerformance/Resources.
