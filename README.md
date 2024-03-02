@@ -61,18 +61,18 @@ Each of the Project 1 teammates focused on one of four topics.
 
 ### 1.) Attributes:  Real-world fuel economy and carbon dioxide emissions
 
-####Exploration(s):
+Exploration(s):
 - The relationship between EV model and real-world fuel economy
 - Differences among manufacturers
 - EV carbon dioxide (CO2) emission trends over time/time series forecast
 
-####Possible variables:
+Possible variables:
 *Independent variables/Features*:   Model, manufacturer, EV type (BEVs, HEVs, PHEVs, FCEVS) horsepower, weight, footprint/vehicle size, battery or engine, seating capacity
 
 *Dependent variables/Labels*:  Fuel economy, CO2, Charging rate and speed
 Sources:
 
-####Data Source:
+Data Source:
 The primary dataset used for the explorations of EV attributes was the US Environmental Protection Agency's (EPA's) *Automotive Trends Data*.  The link to the complete dataset and supporting material follow:
 https://www.epa.gov/automotive-trends/explore-automotive-trends-data
 
