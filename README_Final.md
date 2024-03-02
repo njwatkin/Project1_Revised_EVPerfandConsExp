@@ -438,7 +438,7 @@ EVPerformance/analysis_5year_ownership_all.ipynb
 </figcaption>
 </figure>
 
-The absolute total yearly cost to own for all internal combustion, hybrid and electric vehicle models being considered is plotted in Fig cost. Each line color represents a different model car. In each case, the first year of ownership appears to be the most expensive. There are large variations in the cost for the first year due to the large range of car prices being considered. After the first year, the fluctuations in the cost of ownership between each model vehicles decreases. 
+The absolute total yearly cost to own for all internal combustion, hybrid and electric car models being is plotted in Fig cost. Each line color represents a different model car. In each case, the first year of ownership appears to be the most expensive. There are large variations in the cost for the first year due to the range of car prices being considered. After the first year, the fluctuations in the cost of ownership between each model vehicles decreases. 
 
 <figure>
 <img src = "Presentation/Images/EVPerformance/cost_per_mile.png", alt = "cost_per_mile">
@@ -446,12 +446,12 @@ The absolute total yearly cost to own for all internal combustion, hybrid and el
 </figcaption>
 </figure>
 
-To interpret the typical cost of based on the engine type, the average cost per mile of ownership is calculated and displayed in fig cost/year. The cost is further broken down into the seven major yearly expenses being considered in this case study: depreciation, interest on the loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel. In general, the figure illustrates how the maintained and repairs will increase over time due to wear and tear while the total cost due to depreciation, financing and taxes and fees decreases with the age of the vehicle.
+To understand cost by engine type, the average cost per mile of ownership is calculated and displayed in fig cost/year. The cost is further broken down into the seven major yearly expenses being considered in this case study: depreciation, interest on the loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel. In general, the fig cost/year illustrates that maintainenance and repairs will increase over time due to wear and tear while costs due to depreciation, financing, and taxes and fees decreases with the age of the vehicle.
 
 #### Exploration:  What is the greatest cost from owning an EV?
 #####Takeaway:
 
-In each case, the first year has the largest expense. It is obvious that the electric vehicles are the most expensive to own the 1st year than the internal combustion engines by \$0.55/mile, while the hybrid cars cost \$0.32/mile more. In the second year, the cost of ownership decreases significantly by about 50%-65% compared to the first year. After 5 years, it cost on average \$4.33/mile, \$4.78/mile and \$4.09/mile to maintain an electric, hybrid and internal combustion type car, respectively. This means that the breakeven point of an electric and hybrid car compared to an gas/diesel is more slightly more than 5 years.
+For all engine types, the first year has the largest expense. The EVs are more expensive to own the 1st year compared to the internal combustion engine car type by \$0.55/mile, and the hybrid car type by \$0.32/mile. In the second year, the cost of ownership decreases significantly by about 50%-65% (when compared to the first year). After 5 years, it costs on average \$4.33/mile, \$4.78/mile and \$4.09/mile to maintain an electric, hybrid and internal combustion type car, respectively. This means that the breakeven point of an electric and hybrid car compared to an gas/diesel takes longer -  more than 5 years.
 
 
 <figure>
@@ -460,14 +460,14 @@ In each case, the first year has the largest expense. It is obvious that the ele
 </figcaption>
 </figure>
 
-Fig depreciation is the breakdown of the yearly cost of the largest expense, the depreciation verses the initial cost of the vehicle. There is a clear linear correlation between most of the models vs cost. This indicates that one can decrease the cost of ownership by buying a cheaper vehicle. The gradients of the ev and internal combustion engines are similar for the first two years, but the offsets for the ev is larger indicating that regardless of which price point one choices, the depreciation for the ev will be larger during these two years. There appears to be a few higher priced evs that seems to retain their value, i.e. smaller depreciation. These few models represent the exception to the linear trend observed. 
+Fig depreciation is the breakdown of the yearly cost of the largest expense, the depreciation verses the initial cost of the vehicle. There is a clear linear correlation between most of the models vs cost. This indicates that one can decrease the cost of ownership by buying a cheaper vehicle. The gradients of the EV and internal combustion engines are similar for the first two years, but the offset for the EV is larger indicating that regardless of which price point one chooses, the depreciation for an EV will be larger during these two years. There appears to be a few higher priced EVs that seems to retain their value, i.e. smaller depreciation. These few models represent the exception to the linear trend observed. 
 
 <figure>
 <img src = "Presentation/Images/EVPerformance/YearlyPercentageOfCost.png", alt = "Yearly%ofCost"> <figcaption> Fig Yearly Percentage of Cost: The average yearly depreciation for a internal combustion (left panel), hybrid (center panel) and electric (right panel) vehicles.
 </figcaption>
 </figure>
 
-Fig. Yearly Percentage of Cost is the normalized distribution of the cost for each year for each engine type. After the first year, roughly 30% of the cost to own can be attributed to the depreciation while the insurance premiums and taxes and fees contributes 11-20% and 1.5-2.5%, respectively. The financing cost drops significantly as one starts to pay off the car, but the maintenance and repairs increases.
+Fig Yearly Percentage of Cost is the normalized distribution of the cost for each year for each engine type. After the first year, roughly 30% of the cost to own can be attributed to the depreciation while the insurance premiums and taxes and fees contributes 11-20% and 1.5-2.5%, respectively. The financing cost drops significantly as one starts to pay off the car, but the maintenance and repairs increases.
 
 ### 3.) Charging: Charging time and needs:
 #### Exploration:  What day of the week do most people charge EVs?
