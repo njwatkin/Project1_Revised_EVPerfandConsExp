@@ -85,11 +85,11 @@ The dataset can be filtered for specific variables, though this can be challengi
 
 *“All data are based on production volumes delivered for sale in the U.S. by model year, and may vary from publicized data based on calendar year sales.”*
 
-#####*Licensure and Credits*:  
+*Licensure and Credits*:  
 This dataset is open access. 
 “Suggested data citation: US Environmental Protection Agency. 2023 EPA Automotive Trends Report. Data available at www.epa.gov/automotive-trends/explore-automotive-trends-data. Accessed December, 2023 and January, 2024.”
 
-#####*Limitations of the Automotive Trends Data*:
+*Limitations of the Automotive Trends Data*:
 The EPA's *Automotive Trends Data* did not start tracking EVs car models till 2010. Consequently, EV car models are a smaller subset of the much larger database. When interpreting findings about EVs from this dataset, it is recommended that the reader consider the limitations of a smaller sample size.    
 
 ### 2.) Costs:  The financial costs of buying and owning an EV
@@ -117,26 +117,26 @@ Possible variables:
 *Dependent variables/Labels*:
 - Age of car in years
 
-####Data Source:
+Data Source:
 The data was extracted from the Edmund's true cost of to own https://www.edmunds.com/tco.html for the vehicles.  The data was scraped using the python script in Code/EVPerformance/reading_tables.py. The purpose of this script was to find and extract values in tables from the http file and concatenate them into their respective csv files found in Code/EVPerformance/Resources
 
-#####*Licensure and Credits*:
+*Licensure and Credits*:
 The api is no longer open.  The data was extracted into csv files for analysis.
 
 
-#####*Limitations*:
+*Limitations*:
 The data was limited to the 2023 model year and car models ranging in cost from $26k - $113k.  The cost range was constrained to allow for a fairer comparison among engine types. 
 
 
 
 
 ### 3.) Charging:  Charging times and trends
-####Exploration(s): 
+Exploration(s): 
 The charging behavior Electric Vehicle users.
 The time it takes to charge an Elecric Vehicle.
 What days and how long is the typical Electric Vehicle User charging theri behcicles. 
 
-####Possible variables:
+Possible variables:
 *Independent variables/Features*:   
 Locations of charging stations.
 Metro areas with charging stations clusters.
@@ -149,11 +149,11 @@ Private and public EV charging stations
 Days of the week
 Average Eletric Vehcile charging time
 
-####Data Source:
+Data Source:
 the data was recieved by Chargepoint, Inc..   Chargepoint is the second largest charging point supplier in the United States behind Tesla, Inc.   A team member emailed Chargepoint and they sent back a dataset detailing charging times, charging locations and days of the week.
-#####*Licensure and Credits*:  
+*Licensure and Credits*:  
 Chargepoint, Inc. 
-#####*Limitations*: 
+*Limitations*: 
 Chargepoint represents 14,155 level 2 locations which includes 48,946 charging plugs.   This is in contrast to the 160,000 actual public and private charging locations in the United States.   
 
 
