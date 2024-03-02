@@ -5,7 +5,7 @@
 
 ![Presentation_Cover_Image](<Presentation/Images/Cover_and_General/Presentation_Cover.png>)
 
-##Project Purpose
+Project Purpose
 ---
 
 We explored data on electric vehicle (EV) attributes, performance, charging, and consumer experiences with a focus on how these are related to:
@@ -14,7 +14,7 @@ We explored data on electric vehicle (EV) attributes, performance, charging, and
 - *Charging*:  EV charging times and trends
 - *Barriers*:  Barriers to EV adoption reported by consumers
 
-##Project Questions
+Project Questions
 ---
 The questions were those we anticipated from an audience of vehicle manufacturers, EV engineers, and EV sales and marketing teams: 
 
