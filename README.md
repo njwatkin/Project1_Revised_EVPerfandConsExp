@@ -188,7 +188,7 @@ The data was from reports.  The data was scraped from the reports and analyzied.
 ### 1.) Attributes: 
 #### Exploration:  The relationship between EV model and real-world fuel economy
 
-#####Code (Includes log transformation of 'Real-World MPG'):
+Code (Includes log transformation of 'Real-World MPG'):
 
 ```
 #### Import the required libraries and dependencies
@@ -255,14 +255,14 @@ correlation = cotwo_by_cfe_df['Real-World CO2 (g/mi)'].corr(cotwo_by_cfe_df['Rea
 
 print("Correlation between 'Real-World CO2 (g/mi)' and 'Real-World MPG':", correlation)
 ```
-#####Graph:
+Graph:
 ![EV_CO2_Rel](<Presentation/Images/EVAttributes/EV_CO2_Rel.png>)
 
-#####Takeaway:
+Takeaway:
 Electric vehicles emit less CO2 emissions than gasoline or diesel-powered vehicles traveling the same distance.  However, some electric car models are much less efficient than their competitors. 
 
 #### Exploration:  The differences among manufacturers
-#####Code:  
+Code:  
 ```
 ## Import the required libraries and dependencies
 import pandas as pd
@@ -331,7 +331,7 @@ plt.show()
 Average EV real-world fuel economy/mpg has been considerably lower for Honda, GM, Suzuki, Stellantis, and VW models when compared to Lucid or Hyundai. 
 
 #### Exploration:  Electric vehicle CO2 emission trends over time/time series forecast
-#####Code:
+Code:
 ```
 ##Install the required libraries and dependencies.  
 !pip install prophet
@@ -429,22 +429,22 @@ forecast_evcotwo_trends = prophet_model.predict(evcotwo_trends)
 fig1 = prophet_model.plot(forecast_evcotwo_trends, xlabel='Model Year', ylabel='Real-World CO2 (g/mi)')
 ```
 
-#####Graph:
+Graph:
 ![FCast](<Presentation/Images/EVAttributes/FCast.png>)
 
-#####Takeaway:
+Takeaway:
 EVs are trending toward zero CO2 emissions by 2027.  However, the small sample size does limite this interpretation.  
 
 
 ### 2.) Costs: The financial costs of buying and owning an EV:
 
 #### Exploration:  How do costs change over time?
-#####Code:
+Code:
 
 see source code in Code/EVPerformance/
 EVPerformance/analysis_5year_ownership_all.ipynb
 
-#####Takeaway:
+Takeaway:
 <figure>
 <img src = "Presentation/Images/EVPerformance/cost.png", alt = "cost">
 <figcaption> Fig cost: The yearly cost to own for a internal combustion (left panel), hybrid (center panel) and electric type(right panel) vehicles.
@@ -462,7 +462,7 @@ The absolute total yearly cost to own for all internal combustion, hybrid and el
 To understand cost by engine type, the average cost per mile of ownership is calculated and displayed in fig cost/year. The cost is further broken down into the seven major yearly expenses being considered in this case study: depreciation, interest on the loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel. In general, the fig cost/year illustrates that maintainenance and repairs will increase over time due to wear and tear while costs due to depreciation, financing, and taxes and fees decreases with the age of the vehicle.
 
 #### Exploration:  What is the greatest cost from owning an EV?
-#####Takeaway:
+Takeaway:
 
 For all engine types, the first year has the largest expense. The EVs are more expensive to own the 1st year compared to the internal combustion engine car type by \$0.55/mile, and the hybrid car type by \$0.32/mile. In the second year, the cost of ownership decreases significantly by about 50%-65% (when compared to the first year). After 5 years, it costs on average \$4.33/mile, \$4.78/mile and \$4.09/mile to maintain an electric, hybrid and internal combustion type car, respectively. This means that the breakeven point of an electric and hybrid car compared to an gas/diesel takes longer -  more than 5 years.
 
@@ -484,7 +484,7 @@ Fig Yearly Percentage of Cost is the normalized distribution of the cost for eac
 
 ### 3.) Charging: Charging time and needs:
 #### Exploration:  What day of the week do most people charge EVs?
-#####Code:
+Code:
 ```
 ## Import the required libraries and dependencies
 import pandas as pd
@@ -513,14 +513,14 @@ plt.ylabel('Average Charge Time (Hrs)')
 plt.show()
 
 ```
-#####Graph:
+Graph:
 ![EVCharge_WD.ipynb](<Presentation/Images/EVCharging/EVCharge_TBWD.png>)
 
-#####Takeaway:
+Takeaway:
 Average overall charge is 2.82 hours, using 5.81kW. Charge times are greatest on Wednesdays with an average of 2.94 hours needed to charge an EV. Sunday is the lowest at 2.1 hours. It is not until the weekend days that we see a substantial drop in the hours needed to charge an electric vehicle. There is only a gradual decline over the days of the work week.
 
 #### Is there a relationship between EV charging time and kilowatt-hours?
-#####Code:
+Code:
 ```
 ## Import the required libraries and dependencies
 import pandas as pd
@@ -547,11 +547,11 @@ plt.tick_params(axis = 'both', which = 'major', labelsize=8)
 plt.show()
 ```
 
-#####Graph:
+Graph:
 
 ![EVCTtoKWH](<Presentation/Images/EVCharging/EVCTtoKWH.png>)
 
-#####Takeaway:
+Takeaway:
 The amount of kilowatts per hour used tends to increase with charge time.  However, some of the charges can lag nearly up to 12 hours. Another group of charge times seems to take less than 4 hours to charge but with greater amount of kilowatts per hour. 
 
 
@@ -583,13 +583,13 @@ plt.tick_params(axis = 'both', which = 'major', labelsize=8)
 plt.show()
 ```
 
-#####Graph:  
+Graph:  
 ![FCast](<Presentation/Images/ConsumerExperience/BarriersToEVAdoption.png>)
-#####Takeaway: 
+Takeaway: 
 The demographics of a typical EV buyer are male, young adult, with a higher education, a higher income level and live in an urban area. 
 
 #### Exploration:  Why do people not purchase an EV?
-#####Code:
+Code:
 ```
 # Import the required libraries and dependencies
 import pandas as pd
@@ -616,9 +616,9 @@ plt.tick_params(axis = 'both', which = 'major', labelsize=8)
 plt.show()
 ```
 
-#####Graph:  
+Graph:  
 ![FCast](<Presentation/Images/ConsumerExperience/ConsumerConcerns.png>)
-#####Takeaway: 
+Takeaway: 
 The majority of consumers are not knowledgeable on the subject of EVs, many not even having driven one.  Without this knowledge, they are hesitant to make a purchase.
 
 
