@@ -26,7 +26,7 @@ The questions were those we anticipated from an audience of vehicle manufacturer
    - How do costs of owning an EV change over time?
 - *Charging: Charging time and needs*:
    - What day of the week do most people charge EVs?
-   - What is the average charge time and at what kilowatt-hours?
+   - Is there a relationship between EV charging time and kilowatt-hours?
 - *Barriers:  Consumer barriers to EV adoption*:  
    - Who is most likely to purchase an EV?
    - Why do people not purchase an EV?
@@ -519,7 +519,7 @@ plt.show()
 #####Takeaway:
 Average overall charge is 2.82 hours, using 5.81kW. Charge times are greatest on Wednesdays with an average of 2.94 hours needed to charge an EV. Sunday is the lowest at 2.1 hours. It is not until the weekend days that we see a substantial drop in the hours needed to charge an electric vehicle. There is only a gradual decline over the days of the work week.
 
-#### What is the average charge time and at what kilowatt-hours?
+#### Is there a relationship between EV charging time and kilowatt-hours?
 #####Code:
 ```
 ## Import the required libraries and dependencies
@@ -552,7 +552,7 @@ plt.show()
 ![EVCTtoKWH](<Presentation/Images/EVCharging/EVCTtoKWH.png>)
 
 #####Takeaway:
-Kilowatts per hour generally increase with charge time with some charging taking faster (less than 4 hours).  However, some of the charges can lag nearly up to 12 hours.  
+The amount of kilowatts per hour used tends to increase with charge time.  However, some of the charges can lag nearly up to 12 hours. Another group of charge times seems to take less than 4 hours to charge but with greater amount of kilowatts per hour. 
 
 
 ### 4.) Barriers: Consumer barriers to EV adoption  
