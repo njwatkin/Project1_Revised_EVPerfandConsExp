@@ -32,7 +32,7 @@ The questions were those we anticipated from an audience of vehicle manufacturer
    - Why do people not purchase an EV?
 
 
-##Secondary Research
+Secondary Research
 ---
 Our first step was to conduct secondary research on EVs.   The secondary research helped in the following ways:
 - Broadened our understanding of the existing research on EVs
@@ -54,7 +54,7 @@ Our primary audiences in the EV community would be:
 Our primary challenge during Project 1 ocurred during the secondary research.  There are several private companies who are growing their datasets on EV efficiency, performance, and consumer sentiment.  However, these companies charge substantial licensing fees to access their data. Ultimately, we had to rely on publicly accessible data readily available on government websites or made available to us after asking and waiting for permissions.  For more details on these data sources, please see the next section.  
 
 
-## About the Data
+About the Data
 ---
 
 Each of the Project 1 teammates focused on one of four topics.  
