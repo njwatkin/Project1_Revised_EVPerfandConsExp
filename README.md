@@ -557,7 +557,7 @@ The amount of kilowatts per hour used tends to increase with charge time.  Howev
 
 ### 4.) Barriers: Consumer barriers to EV adoption  
 #### Exploration:  Who is most likely to purchase an EV?
-#####Code:
+Code:
 ```
 ## Import the required libraries and dependencies
 import pandas as pd
