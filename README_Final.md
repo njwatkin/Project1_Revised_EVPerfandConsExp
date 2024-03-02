@@ -12,15 +12,15 @@ We explored data on electric vehicle (EV) attributes, performance, charging, and
 - *Attributes*: EV real-world fuel economy and carbon dioxide emissions
 - *Costs*:  The financial costs of buying and owning an EV
 - *Charging*:  EV charging times and trends
-- *Barriers*:  Consumer barriers to EV adoption
+- *Barriers*:  Barriers to EV adoption reported by consumers
 
 ##Project Questions
 ---
-The questions for the projects were those we anticipated from an audience of vehicle manufacturers, EV engineers, and EV sales and marketing teams: 
+The questions were those we anticipated from an audience of vehicle manufacturers, EV engineers, and EV sales and marketing teams: 
 
 - *Attributes: Real-world fuel economy and carbon dioxide emissions*:
-   - Which EV models and manufacturers have the highest fuel economy and carbon dioxide emissions efficiencies?
-   - When can we predict EVs will emit zero carbon dioxide and possibly contribute to carbon negativity?
+   - Which EV models and manufacturers have the highest fuel economy and carbon dioxide emission efficiencies?
+   - When can we predict EVs will emit no carbon dioxide and possibly contribute to carbon negativity?
 - *Costs: The financial costs of buying and owning an EV*:
    - What is the greatest cost from owning an EV?
    - How do costs of owning an EV change over time?
@@ -44,7 +44,7 @@ The secondary research exposed us to the variety of EV types on the market.
 
 ![EVTypes](<Presentation/Images/Cover_and_General/EV_Types.png>)
 
-Based on the secondary research, available datasets, and the current focus in popular media on EV cars, we opted to focus on EV cars (passenger cars and sports vehicles) for Project 1.  Accordingly, we preprocessed datasets so pickup truck and heavy utility vehicle data were not included in the analyses. 
+Based on the secondary research, available datasets, and the current focus in popular media on EV cars, we opted to focus on EV cars (passenger cars and sports vehicles) for Project 1.  Accordingly, we preprocessed datasets so *pickup truck, heavy utility, and commmerical vehicle data were not included in the analyses*. 
 
 Our primary audiences in the EV community would be:
 - Vehicle manufacturers
@@ -57,14 +57,14 @@ Our primary challenge during Project 1 ocurred during the secondary research.  T
 ## About the Data
 ---
 
-Each of the Project 1 teammates focused on one of four topics:
+Each of the Project 1 teammates focused on one of four topics.  
 
 ### 1.) Attributes:  Real-world fuel economy and carbon dioxide emissions
 
 ####Exploration(s):
 - The relationship between EV model and real-world fuel economy
 - Differences among manufacturers
-- EV CO2 emission trends over time/time series forecast
+- EV carbon dioxide (CO2) emission trends over time/time series forecast
 
 ####Possible variables:
 *Independent variables/Features*:   Model, manufacturer, EV type (BEVs, HEVs, PHEVs, FCEVS) horsepower, weight, footprint/vehicle size, battery or engine, seating capacity
@@ -73,15 +73,17 @@ Each of the Project 1 teammates focused on one of four topics:
 Sources:
 
 ####Data Source:
-The primary dataset used for the explorations was the US Environmental Protection Agency's (EPA's) *Automotive Trends Data*.  The link to the complete dataset and supporting material follow:
+The primary dataset used for the explorations of EV attributes was the US Environmental Protection Agency's (EPA's) *Automotive Trends Data*.  The link to the complete dataset and supporting material follow:
 https://www.epa.gov/automotive-trends/explore-automotive-trends-data
 
-The complete dataset can be filtered for specific variables, though this can be challenging and seemed dependent on the browser used with *internet explorer* proving more effective.
+The dataset can be filtered for specific variables, though this can be challenging and seemed dependent on the browser used with *internet explorer* proving most effective.
 
-These are specific quotes from the EPA that characterize the dataset:
-“The Trends database includes all new light-duty vehicles in the United States.”
-“The Trends database has been maintained by EPA since 1975 and is updated annually to include the most up to date data available for all model years.”
-“All data are based on production volumes delivered for sale in the U.S. by model year, and may vary from publicized data based on calendar year sales.”
+**These are specific quotes from the EPA about the dataset**:
+*“The Trends database includes all new light-duty vehicles in the United States.”*
+
+*“The Trends database has been maintained by EPA since 1975 and is updated annually to include the most up to date data available for all model years.”*
+
+*“All data are based on production volumes delivered for sale in the U.S. by model year, and may vary from publicized data based on calendar year sales.”*
 
 #####*Licensure and Credits*:  
 This dataset is open access. 
@@ -92,38 +94,40 @@ The EPA's *Automotive Trends Data* did not start tracking EVs car models till 20
 
 ### 2.) Costs:  The financial costs of buying and owning an EV
 ####Exploration(s):
-* The five-year cost of owning an EV is compared to owning a hybrid and internal combustion (gas) engine type vehicles.
-* Commercial vehicles such as semis and buses are excluded from the analysis.
-* The seven major yearly costs depreciation, interest on the loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel are considered.
+* The five-year cost of owning an EV compared to owning a hybrid or internal combustion (gas) engine type vehicle
+* The seven major yearly costs of owning a car including depreciation, interest on the car loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel are considered
 
 
 ####Possible variables:
 *Independent variables/Features*:
-- depreciation
+- Depreciation
    - On average, Edmund’s estimates that in the first year a typical vehicle will lose 23.5% of its manufacturer's suggested retail price and about 60% of its value after 5 years.
       - Estimates are based on auctions and retail data, supply and demand, pricing, incentives, redesign and improvements of newer models, like models, and the economy
-   - interest on the loan
+   - Interest on the car loan
       - Based on tradition financing and not lease to own over a 60 months period
-   - taxes and fees
-      - assume 10% down payment
-   - maintenance and repairs
-      - estimated based on the manufacture's recommended suggestions as well as unscheduled types such as wheel alignments and replacement for wear and tear of the vehicle
-   - insurance premiums
-      - based on driving in mid-Michigan
-   - fuel
+   - Taxes and fees
+      - Assume 10% down payment
+   - Maintenance and repairs
+      - Estimated based on the manufacture's recommended suggestions as well as unscheduled types such as wheel alignments and replacement for wear and tear of the vehicle
+   - Insurance premiums
+   - Fuel
       - Cost is based the manufactures recommended fuel type and is estimated based on an average person driving 15,000 miles/year, with an admixture of 45% highway driving and 55% city.
    
    
 *Dependent variables/Labels*:
-- year/age
+- Age of car in years
 
-####Data Source:"
-The data was extracted from the Edmund's true cost of to own https://www.edmunds.com/tco.html for the vehicles.
+####Data Source:
+The data was extracted from the Edmund's true cost of to own https://www.edmunds.com/tco.html for the vehicles.  The data was scraped using the python script in Code/EVPerformance/reading_tables.py. The purpose of this script was to find and extract values in tables from the http file and concatenate them into their respective csv files found in Code/EVPerformance/Resources
+
+#####*Licensure and Credits*:
+The api is no longer open.  The data was extracted into csv files for analysis.
+
 
 #####*Limitations*:
--The data was constrained for the 2023 model year due to the number of available EV on the market information from the website. The data is constrained to models costing $26k - $113k to purchase to make a fairer comparison with the different type of engines. The api is no longer open to the public, so the data was extracted into cvs for analysis.
+The data was limited to the 2023 model year and car models ranging in cost from $26k - $113k.  The cost range was constrained to allow for a fairer comparison among engine types. 
 
-The data was scaped using the python script in Code/EVPerformance/reading_tables.py. The purpose of this script was to find and extract values in tables from the http file and concat them into their respective csv files found in Code/EVPerformance/Resources.
+
 
 ### 3.) Charging:  Charging times and trends
 ####Exploration(s):
@@ -147,21 +151,26 @@ The data was scaped using the python script in Code/EVPerformance/reading_tables
  - Exposure of consumers to EVs
 
 ####Possible variables:
-*Independent variables/Features*:   Types/models available, price, 
-
-*Dependent variables/Labels*:  Charging - locations, rates, speed, number of units available
-
-####Data Source: 2022 BEV and LCF Survey Report_FINAL_2 (consumerreports.org) and More Americans Would Buy an EV | Interest in Low-Carbon Fuels - Consumer Reports
-
-#####*Licensure and Credits*:  This data set is open access.
+*Variables/Features*:   Ethnicity, gender, education, age, perceived barriers to purchase 
 
 
-#####*Limitations*: A large amount of the data regarding consumers was in reports, rather than data sets giving opinions and reasons to adopt and/or not adopt.
+####Data Source: 
+2022 BEV and LCF Survey Report_FINAL_2 (consumerreports.org) 
+*More Americans Would Buy an EV | Interest in Low-Carbon Fuels* - Consumer Reports
+
+#####*Licensure and Credits*:  
+Open access
+
+
+#####*Limitations*: 
+The data was from reports.  The data was scraped from the reports and analyzied.   .
 
 
 
 ## Preprocessing and Analytics
 ---
+ Across all Pickup truck, heavy utility, and commmerical vehicle data were excluded from the datasets used for analyses. 
+
 ### 1.) Attributes: 
 #### Exploration:  The relationship between EV model and real-world fuel economy
 
@@ -502,15 +511,20 @@ Average overall charge is 2.82 hours, using 5.81kW. Charge times are greatest on
 #####Graph:
 #####Takeaway:
 
-### 4.) Barriers:  Consumer barriers to EV adoption:  
+### 4.) Barriers: Consumer barriers to EV adoption  
 #### Exploration:  Who is most likely to purchase an EV?
-#####Graph:  ![FCast](<Presentation/Images/ConsumerExperience/BarriersToEVAdoption.png>)
-#####Takeaway: The demographics of a typical EV buyer are male, young adult, with a higher education, a higher income level and live in an urban area. 
+#####Code:
+#####Graph:  
+![FCast](<Presentation/Images/ConsumerExperience/BarriersToEVAdoption.png>)
+#####Takeaway: 
+The demographics of a typical EV buyer are male, young adult, with a higher education, a higher income level and live in an urban area. 
 
 #### Exploration:  Why do people not purchase an EV?
 #####Code:
-#####Graph:  ![FCast](<Presentation/Images/ConsumerExperience/ConsumerConcerns.png>)
-#####Takeaway: The majority of consumers are not knowledgeable on the subject of Electric Vehicles.  Without this knowledge, they are hesitant to make a purchase.
+#####Graph:  
+![FCast](<Presentation/Images/ConsumerExperience/ConsumerConcerns.png>)
+#####Takeaway: 
+The majority of consumers are not knowledgeable on the subject of Electric Vehicles.  Without this knowledge, they are hesitant to make a purchase.
 
 
 ## Directory Structure
