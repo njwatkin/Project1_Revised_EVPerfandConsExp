@@ -133,7 +133,7 @@ The data was limited to the 2023 model year and car models ranging in cost from 
 ####Exploration(s): 
 The charging behavior Electric Vehicle users.
 The time it takes to charge an Elecric Vehicle.
-What days and how long is the typical Electric Vehicle User charging theri behcicles. 
+What days and how long is the typical Electric Vehicle User charging their vehicl. .
 
 ####Possible variables:
 *Independent variables/Features*:   
@@ -154,6 +154,7 @@ the data was recieved by Chargepoint, Inc..   Chargepoint is the second largest 
 Chargepoint, Inc. 
 #####*Limitations*: 
 Chargepoint represents 14,155 level 2 locations which includes 48,946 charging plugs.   This is in contrast to the 160,000 actual public and private charging locations in the United States.  
+
 ### 4.) Barriers: Consumer barriers to EV adoption
 ####Exploration(s):
  - The reasons consumers are hesitant to adopt EVs
