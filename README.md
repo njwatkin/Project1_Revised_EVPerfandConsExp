@@ -93,12 +93,12 @@ This dataset is open access.
 The EPA's *Automotive Trends Data* did not start tracking EVs car models till 2010. Consequently, EV car models are a smaller subset of the much larger database. When interpreting findings about EVs from this dataset, it is recommended that the reader consider the limitations of a smaller sample size.    
 
 ### 2.) Costs:  The financial costs of buying and owning an EV
-####Exploration(s):
+Exploration(s):
 * The five-year cost of owning an EV compared to owning a hybrid or internal combustion (gas) engine type vehicle
 * The seven major yearly costs of owning a car including depreciation, interest on the car loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel are considered
 
 
-####Possible variables:
+Possible variables:
 *Independent variables/Features*:
 - Depreciation
    - On average, Edmund’s estimates that in the first year a typical vehicle will lose 23.5% of its manufacturer's suggested retail price and about 60% of its value after 5 years.
