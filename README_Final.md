@@ -129,19 +129,33 @@ The data was limited to the 2023 model year and car models ranging in cost from 
 
 
 
+
 ### 3.) Charging:  Charging times and trends
-####Exploration(s):
+####Exploration(s): 
+The charging behavior Electric Vehicle users.
+The time it takes to charge an Elecric Vehicle.
+What days and how long is the typical Electric Vehicle User charging theri behcicles. 
 
 ####Possible variables:
 *Independent variables/Features*:   
+Locations of charging stations.
+Metro areas with charging stations clusters.
+EV sales by models
+Trips by length
+Private EV chaging stations
+Private and public EV charging stations 
 
 *Dependent variables/Labels*:  
+Days of the week
+Average Eletric Vehcile charging time
 
 ####Data Source:
-
+the data was recieved by Chargepoint, Inc..   Chargepoint is the second largest charging point supplier in the United States behind Tesla, Inc.   A team member emailed Chargepoint and they sent back a dataset detailing charging times, charging locations and days of the week.
 #####*Licensure and Credits*:  
-
+Chargepoint, Inc. 
 #####*Limitations*: 
+Chargepoint represents 14,155 level 2 locations which includes 48,946 charging plugs.   This is in contrast to the 160,000 actual public and private charging locations in the United States.   
+
 
 ### 4.) Barriers: Consumer barriers to EV adoption
 ####Exploration(s):
@@ -177,7 +191,7 @@ The data was from reports.  The data was scraped from the reports and analyzied.
 #####Code (Includes log transformation of 'Real-World MPG'):
 
 ```
-##Dependencies
+#### Import the required libraries and dependencies
 import pandas as pd
 import sklearn.datasets as dta
 import scipy.stats as st
@@ -250,7 +264,7 @@ Electric vehicles emit less CO2 emissions than gasoline or diesel-powered vehicl
 #### Exploration:  The differences among manufacturers
 #####Code:  
 ```
-## Dependencies
+## Import the required libraries and dependencies
 import pandas as pd
 import sklearn.datasets as dta
 import scipy.stats as st
@@ -322,7 +336,6 @@ Average EV real-world fuel economy/mpg has been considerably lower for Honda, GM
 ##Install the required libraries and dependencies.  
 !pip install prophet
 
-##Import dependencies
 import pandas as pd
 from prophet import Prophet
 import datetime as dt
@@ -473,7 +486,7 @@ Fig Yearly Percentage of Cost is the normalized distribution of the cost for eac
 #### Exploration:  What day of the week do most people charge EVs?
 #####Code:
 ```
-## Dependencies
+## Import the required libraries and dependencies
 import pandas as pd
 import scipy.stats as st
 import matplotlib.pyplot as plt
@@ -501,19 +514,75 @@ plt.show()
 
 ```
 #####Graph:
-![EVCharge_TBWD](<Presentation/Images/EVCharging/EVCharge_TBWD.png>)
+![EVCharge_WD.ipynb](<Presentation/Images/EVCharging/EVCharge_TBWD.png>)
 
 #####Takeaway:
 Average overall charge is 2.82 hours, using 5.81kW. Charge times are greatest on Wednesdays with an average of 2.94 hours needed to charge an EV. Sunday is the lowest at 2.1 hours. It is not until the weekend days that we see a substantial drop in the hours needed to charge an electric vehicle. There is only a gradual decline over the days of the work week.
 
 #### What is the average charge time and at what kilowatt-hours?
 #####Code:
+```
+## Import the required libraries and dependencies
+import pandas as pd
+from prophet import Prophet
+import datetime as dt
+import numpy as np
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+## Convert excel file to a Pandas dataframe.
+df= pd.read_excel("ev.charge.xlsx")
+df.head()
+df.dtypes
+df.info()
+
+##Plot
+plt.scatter(df['chargeTimeHrs'], df['kwhTotal'])
+plt.xticks(rotation=33)
+plt.tight_layout()
+plt.title("Time to charge and EV", fontsize=20)
+plt.xlabel("Time in Hours", fontsize=15)
+plt.ylabel("Kilowatt Per Hour", fontsize=15)
+plt.tick_params(axis = 'both', which = 'major', labelsize=8)
+plt.show()
+```
+
 #####Graph:
+
+![EVCTtoKWH](<Presentation/Images/EVCharging/EVCTtoKWH.png>)
+
 #####Takeaway:
+Kilowatts per hour generally increase with charge time with some charging taking faster (less than 4 hours).  However, some of the charges can lag nearly up to 12 hours.  
+
 
 ### 4.) Barriers: Consumer barriers to EV adoption  
 #### Exploration:  Who is most likely to purchase an EV?
 #####Code:
+```
+## Import the required libraries and dependencies
+import pandas as pd
+from prophet import Prophet
+import datetime as dt
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+#Convert excel document to a Pandas dataframe
+df = pd.read_excel('ev.cost.barriers.xlsx')
+
+##Plot
+x_values= df["Race"]
+y_values= df["EV"]
+plt.plot(x_values, y_values)
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.title("Percentage of People Concerned about EV Costs", fontsize=12)
+plt.xlabel("Race", fontsize=15)
+plt.ylabel("Percentage of People", fontsize=15)
+plt.tick_params(axis = 'both', which = 'major', labelsize=8)
+plt.show()
+```
+
 #####Graph:  
 ![FCast](<Presentation/Images/ConsumerExperience/BarriersToEVAdoption.png>)
 #####Takeaway: 
@@ -521,10 +590,36 @@ The demographics of a typical EV buyer are male, young adult, with a higher educ
 
 #### Exploration:  Why do people not purchase an EV?
 #####Code:
+```
+# Import the required libraries and dependencies
+import pandas as pd
+from prophet import Prophet
+import datetime as dt
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+#Convert excel document to a Pandas dataframe
+df = pd.read_excel('EV.barriers.xlsx')
+df.head()
+
+##Plot
+x_values= df["Bar"]
+y_values= df["Percentage"]
+plt.plot(x_values, y_values)
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.title("Barriers to EV Adoption", fontsize=12)
+plt.xlabel("Concerns", fontsize=15)
+plt.ylabel("Percentage of People", fontsize=12)
+plt.tick_params(axis = 'both', which = 'major', labelsize=8)
+plt.show()
+```
+
 #####Graph:  
 ![FCast](<Presentation/Images/ConsumerExperience/ConsumerConcerns.png>)
 #####Takeaway: 
-The majority of consumers are not knowledgeable on the subject of Electric Vehicles.  Without this knowledge, they are hesitant to make a purchase.
+The majority of consumers are not knowledgeable on the subject of EVs, many not even having driven one.  Without this knowledge, they are hesitant to make a purchase.
 
 
 ## Directory Structure
