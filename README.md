@@ -158,25 +158,25 @@ Chargepoint represents 14,155 level 2 locations which includes 48,946 charging p
 
 
 ### 4.) Barriers: Consumer barriers to EV adoption
-####Exploration(s):
+Exploration(s):
  - The reasons consumers are hesitant to adopt EVs
  - Demographics of EV buyers
  - Concerns of consumers
  - Exposure of consumers to EVs
 
-####Possible variables:
+Possible variables:
 *Variables/Features*:   Ethnicity, gender, education, age, perceived barriers to purchase 
 
 
-####Data Source: 
+Data Source: 
 2022 BEV and LCF Survey Report_FINAL_2 (consumerreports.org) 
 *More Americans Would Buy an EV | Interest in Low-Carbon Fuels* - Consumer Reports
 
-#####*Licensure and Credits*:  
+*Licensure and Credits*:  
 Open access
 
 
-#####*Limitations*: 
+*Limitations*: 
 The data was from reports.  The data was scraped from the reports and analyzied.   .
 
 
