@@ -459,7 +459,7 @@ The absolute total yearly cost to own for all internal combustion, hybrid and el
 </figcaption>
 </figure>
 
-To understand cost by engine type, the average cost per mile of ownership is calculated and displayed in fig cost/year. The cost is further broken down into the seven major yearly expenses being considered in this case study: depreciation, interest on the loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel. In general, the fig cost/year illustrates that maintainenance and repairs will increase over time due to wear and tear while costs due to depreciation, financing, and taxes and fees decreases with the age of the vehicle.
+To understand cost by engine type, the average cost per mile of ownership is calculated and displayed in fig cost/year. The cost is further broken down into the seven major yearly expenses being considered in this case study: depreciation, interest on the loan, taxes and fees, maintenance and repairs, insurance premiums, and fuel. In general, the fig cost/year illustrates that maintenance and repairs, purple and brown part of the bar graph, respectively, will increase over time due to wear and tear while the costs due to depreciation, financing, and taxes and fees, represented by the blue, orange and pink parts of the bar graph, respectively, will decreases with the age of the vehicle.
 
 #### Exploration:  What is the greatest cost from owning an EV?
 #####Takeaway:
