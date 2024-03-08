@@ -464,7 +464,36 @@ To understand cost by engine type, the average cost per mile of ownership is cal
 #### Exploration:  What is the greatest cost from owning an EV?
 #####Takeaway:
 
-For all engine types, the first year has the largest expense. The EVs are more expensive to own the 1st year compared to the internal combustion engine car type by \$0.55/mile, and the hybrid car type by \$0.32/mile. In the second year, the cost of ownership decreases significantly by about 50%-65% (when compared to the first year). After 5 years, it costs on average \$4.33/mile, \$4.78/mile and \$4.09/mile to maintain an electric, hybrid and internal combustion type car, respectively. This means that the breakeven point of an electric and hybrid car compared to an gas/diesel takes longer -  more than 5 years.
+Regardless of the engine types, the first year has the largest expense. The EVs are more expensive to own the 1st year compared to the internal combustion engine car type by \$0.55/mile, and the hybrid car type by \$0.32/mile compared to the traditional gas vehicles. In the second year, the cost of ownership decreases significantly by about 50%-65% (when compared to the first year). 
+
+The tabular form of Fig cost/year
+<table>
+   <tr><td> </td><td></td> </td><th colspan=5> cost in $  </th></tr>
+   <tr><td> <strong>expense</strong> </td><td> <strong>engine type</strong> <td><strong>year 1</strong></td><td> <strong>year 2</strong></td><td><strong> year 3</strong></td><td><strong> year 4</strong></td><td> <strong>year 5</strong></td></tr>
+   <tr><td> 	Depreciation	</td><td>	electric	</td><td>	1.40	</td><td>	0.26	</td><td>	0.22	</td><td>	0.26	</td><td>	0.24	</td></tr>
+   <tr><td> 	Financing	</td><td>	electric	</td><td>	0.33	</td><td>	0.27	</td><td>	0.20	</td><td>	0.13	</td><td>	0.05	</td></tr>
+   <tr><td> 	Fuel	</td><td>	electric	</td><td>	0.06	</td><td>	0.07	</td><td>	0.07	</td><td>	0.07	</td><td>	0.07	</td></tr>
+   <tr><td> 	Insurance	</td><td>	electric	</td><td>	0.11	</td><td>	0.11	</td><td>	0.12	</td><td>	0.12	</td><td>	0.12	</td></tr>
+   <tr><td> 	Maintenance	</td><td>	electric	</td><td>	0.01	</td><td>	0.03	</td><td>	0.02	</td><td>	0.12	</td><td>	0.09	</td></tr>
+   <tr><td> 	Repairs	</td><td>	electric	</td><td>	0	</td><td>	0	</td><td>	0	</td><td>	0.03	</td><td>	0.05	</td></tr>
+   <tr><td> 	Taxes_Fees	</td><td>	electric	</td><td>	0.27	</td><td>	0.02	</td><td>	0.02	</td><td>	0.01	</td><td>	0.01	</td></tr>
+   <tr><td> 	Depreciation	</td><td>	hybrid	</td><td>	1.07	</td><td>	0.34	</td><td>	0.27	</td><td>	0.31	</td><td>	0.27	</td></tr>
+   <tr><td> 	Financing	</td><td>	hybrid	</td><td>	0.33	</td><td>	0.27	</td><td>	0.20	</td><td>	0.13	</td><td>	0.05	</td></tr>
+   <tr><td> 	Fuel	</td><td>	hybrid	</td><td>	0.17	</td><td>	0.18	</td><td>	0.18	</td><td>	0.19	</td><td>	0.19	</td></tr>
+   <tr><td> 	Insurance	</td><td>	hybrid	</td><td>	0.10	</td><td>	0.11	</td><td>	0.11	</td><td>	0.11	</td><td>	0.12	</td></tr>
+   <tr><td> 	Maintenance	</td><td>	hybrid	</td><td>	0.01	</td><td>	0.04	</td><td>	0.06	</td><td>	0.20	</td><td>	0.15	</td></tr>
+   <tr><td> 	Repairs	</td><td>	hybrid	</td><td>	0	</td><td>	0	</td><td>	0	</td><td>	0.07	</td><td>	0.10	</td></tr>
+   <tr><td> 	Taxes_Fees	</td><td>	hybrid	</td><td>	0.27	</td><td>	0.02	</td><td>	0.02	</td><td>	0.02	</td><td>	0.02	</td></tr>
+   <tr><td> 	Depreciation	</td><td>	internal combustion	</td><td>	0.84	</td><td>	0.27	</td><td>	0.23	</td><td>	0.26	</td><td>	0.23	</td></tr>
+   <tr><td> 	Financing	</td><td>	internal combustion	</td><td>	0.28	</td><td>	0.23	</td><td>	0.17	</td><td>	0.11	</td><td>	0.04	</td></tr>
+   <tr><td> 	Fuel	</td><td>	internal combustion	</td><td>	0.18	</td><td>	0.19	</td><td>	0.19	</td><td>	0.20	</td><td>	0.21	</td></tr>
+   <tr><td> 	Insurance	</td><td>	internal combustion	</td><td>	0.09	</td><td>	0.10	</td><td>	0.10	</td><td>	0.10	</td><td>	0.11	</td></tr>
+   <tr><td> 	Maintenance	</td><td>	internal combustion	</td><td>	0.01	</td><td>	0.04	</td><td>	0.04	</td><td>	0.15	</td><td>	0.13	</td></tr>
+   <tr><td> 	Repairs	</td><td>	internal combustion	</td><td>	0	</td><td>	0	</td><td>	0	</td><td>	0.04	</td><td>	0.06	</td></tr>
+   <tr><td> 	Taxes_Fees	</td><td>	internal combustion	</td><td>	0.23	</td><td>	0.02	</td><td>	0.01	</td><td>	0.01	</td><td>	0	</td></tr>
+  </table>
+
+From the table above, the total costs to maintain an electric, hybrid and internal combustion type car or the sum of costs for all years for a given engine type, is \$4.96/mile, \$5.68/mile and \$4.87/mile, respectively. Thus, after five years, the cost of owning an ev is about \$0.09/mile more expensive in over five years compared to the internal combustion. This means that the break even point of an electric and hybrid car compared to an gasoline vehicle takes longer than five years.
 
 
 <figure>
